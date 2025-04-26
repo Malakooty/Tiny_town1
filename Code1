@@ -1,0 +1,9 @@
+my-web-game/  
+├── index.html  
+├── style.css  
+├── game.js  
+├── assets/  
+│   ├── player.png  
+│   ├── mine.png  
+│   ├── forest.png  
+│   └── city.png  
