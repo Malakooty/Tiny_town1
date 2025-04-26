@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>شهر من: زندگی چندگانه</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-map">
+        <img src="assets/city.png" class="city" alt="شهر">
+        <img src="assets/mine.png" class="mine" alt="معدن">
+        <img src="assets/forest.png" class="forest" alt="جنگل">
+        <img src="assets/player.png" id="player" alt="بازیکن">
+    </div>
+    <div id="ui">
+        <button id="work-btn">کار در معدن</button>
+        <div id="money">سکه: ۰</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
