@@ -1,0 +1,22 @@
+#game-map {
+    width: 800px;
+    height: 600px;
+    position: relative;
+    background: #f0f0f0;
+}
+#player {
+    position: absolute;
+    width: 50px;
+    cursor: pointer;
+}
+.mine, .forest, .city {
+    position: absolute;
+    width: 100px;
+}
+.mine { top: 100px; left: 200px; }
+.forest { top: 400px; left: 500px; }
+.city { top: 300px; left: 50px; }
+#work-btn {
+    padding: 10px;
+    margin: 10px;
+}
