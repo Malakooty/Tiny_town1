@@ -1,0 +1,29 @@
+const player = document.getElementById("player");
+const workBtn = document.getElementById("work-btn");
+const moneyDisplay = document.getElementById("money");
+
+let money = 0;
+let isWorking = false;
+
+// حرکت کاراکتر با کلیک
+document.addEventListener("click", (e) => {
+    if (e.target.id !== "player") {
+        player.style.left = e.pageX - 25 + "px";
+        player.style.top = e.pageY - 25 + "px";
+    }
+});
+
+// کار در معدن
+workBtn.addEventListener("click", () => {
+    if (isWorking) return;
+    
+    isWorking = true;
+    workBtn.disabled = true;
+    
+    setTimeout(() => {
+        money += 10;
+        moneyDisplay.textContent = `سکه: ${money}`;
+        isWorking = false;
+        workBtn.disabled = false;
+    }, 3000); // 3 ثانیه کار شبیه‌سازی می‌شود
+});
